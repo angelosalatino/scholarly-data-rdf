@@ -15,8 +15,8 @@ WHERE{
 sparql.setReturnFormat(JSON)
 results = sparql.query().convert()
 
-print(results["results"]["bindings"])
+#print(results["results"]["bindings"])
 
 for result in results["results"]["bindings"]:
     print(result["title"]["value"])
-    print()
+    print 
